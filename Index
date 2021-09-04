@@ -1,3 +1,4 @@
+```lua
 local App = {}
 
 function App:Create(settings)
@@ -11,3 +12,4 @@ function App:Create(settings)
 end
 
 return App
+```

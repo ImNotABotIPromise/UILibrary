@@ -4,7 +4,7 @@ function App:Create(settings)
 	local Functions = {}
 
    function Functions:Test(e)
-      print(e)
+      print("e")
    end
     
    return Functions

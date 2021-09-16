@@ -661,6 +661,10 @@ function App.Load(settings)
 				return ValueLabel.Text
 			end
 
+			function Returned:SetValue(value)
+				ValueLabel.Text = value
+			end
+			
 			function Returned:SetText(text)
 				if text then
 					if typeof(text) == "string" or typeof(text) == "number" then

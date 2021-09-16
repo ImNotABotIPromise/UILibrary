@@ -815,8 +815,15 @@ function App.Load(settings)
 			DarknessPicker_Slider.Position = UDim2.new(.5, 0, .073, 0)
 			DarknessPicker_Slider.AnchorPoint = Vector2.new(.5, .5)
 
+			local Button = Instance.new("TextButton", Frame)
+			Button.Name = "Button"
+			Button.TextTransparency = 1
+			Button.BackgroundTransparency = 1
+			Button.Size = UDim2.new(1, 0, 1, 0)
+			Button.ZIndex = 5
+			
 			local Visible = false
-			Display.MouseButton1Click:Connect(function()
+			Button.MouseButton1Click:Connect(function()
 				if Visible == true then
 					Visible = false
 				else
